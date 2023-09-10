@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   name: flower
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: flower
-  replicas: 2
   template:
     metadata:
       labels:
         app: flower
     spec:
       containers:
-      - name: flower
-        image: hichamta/flower:latest
-        ports:
-        - containerPort: 8008
+        - name: flower
+          image: celery/flower:latest  # Use the appropriate Flower image
+          ports:
+            - containerPort: 5555  # Flower UI port
