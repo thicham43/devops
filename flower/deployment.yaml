@@ -7,6 +7,7 @@ spec:
   selector:
     matchLabels:
       app: flower
+
   template:
     metadata:
       labels:
@@ -14,6 +15,6 @@ spec:
     spec:
       containers:
         - name: flower
-          image: celery/flower:latest  # Use the appropriate Flower image
+          image: mher/flower:latest
           ports:
             - containerPort: 5555  # Flower UI port
