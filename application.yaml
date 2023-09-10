@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/thicham43/devop.git
+    repoURL: https://github.com/thicham43/devops.git
     targetRevision: HEAD
     path: flower
   destination:
