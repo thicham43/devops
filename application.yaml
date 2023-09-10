@@ -12,7 +12,7 @@ spec:
     path: flower
   destination:
     server: https://kubernetes.default.svc
-    namespace: my_apps_dev
+    namespace: my-apps-dev
 
   syncPolicy:
     syncOptions:
