@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flower
+spec:
+  selector:
+    matchLabels:
+      app: flower
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: flower
+    spec:
+      containers:
+      - name: flower
+        image: mher/flower:2.0
+        ports:
+        - containerPort: 8008
