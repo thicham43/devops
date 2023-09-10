@@ -7,7 +7,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
+    repoURL: https://github.com/thicham43/devop.git
     targetRevision: HEAD
     path: flower
   destination:
