@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: flower
-        image: mher/flower:2.0
+        image: hichamta/flower:latest
         ports:
         - containerPort: 8008
